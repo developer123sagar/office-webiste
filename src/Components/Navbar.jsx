@@ -3,16 +3,11 @@ import { FiMenu } from "react-icons/fi";
 import { HiXMark } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import logo from "../img/logo.png"
+import { useQuickLinks } from "../App";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  let navLinks = [
-    { name: "HOME", to: "/" },
-    { name: "SERVICES", to: "/services" },
-    { name: "ABOUT US", to: "/about" },
-    { name: "CONTACT US", to: "/contact" },
-    { name: "BLOG", to: "/blog" },
-  ];
+  const navLinks = useQuickLinks();
   return (
     <div className="w-full fixed z-10 top-0 left-0">
       <div className="lg:flex items-center justify-between bg-slate-600 text-white py-2 lg:px-10 px-3">

@@ -49,5 +49,9 @@ body{
     background: rgba(0, 0, 0, 0.753);
 }
 .footer{
-    border-top-left-radius: 40px;
+    border-top-left-radius: 90px;
+}
+.footerSmall{
+    border-top-left-radius: 30px;
+
 }
