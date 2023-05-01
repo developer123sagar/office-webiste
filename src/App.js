@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import { useContext, createContext, useState } from "react";
 import Services from "./Components/Services";
+import Blog from "./Components/Blog";
 
 const AppState = createContext();
 export function useQuickLinks() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
     </QuickLinksProvider>

@@ -76,6 +76,49 @@ const data = {
           title: "1 Year Warranty",
           content: "From a business perspective, offering a warranty in service can also help to reduce the risk of costly legal disputes or reputational damage in the event that a service does not perform as expected. Offering a warranty in service provides customers with added assurance and can help to build trust and loyalty. "
         },
+      ],
+
+      privacyPolicy: [
+        {
+          title: "कागजात साझेदारी प्रावधान (Document Sharing Provision)",
+          contentNep:"प्रारंभिक अध्ययन पश्चात भवनको पूर्ण अध्ययनको लागि, तपाईंले भवनको सबै आवश्यक दस्तावेज (जस्तै संरचनात्मक नक्शा / वास्तुकला चित्रहरू, स्थल र स्थान सम्बन्धि कागजातहरु, समझौता पत्र आदि) हामीलाई उपलब्ध गर्न सहमत हुनुहुन्छ । हामी आश्वासन दिन्छौं कि प्रदान गरिएको दस्तावेज सुरक्षित हुनेछ ।",
+          contentEng:"(For the complete study of the building prior to initial study, you agree to share all the required documents of the building (i.e. structural/ architectural drawings, site location, agreement papers, etc.). We assure that the provided document will be in safe hands.)"
+        },
+        {
+          title: "निरीक्षणको लागि अनुमति (Permission for Inspection)",
+          contentNep:"तपाईं हाम्रो सम्बन्धको उचित पहिचानको साथ कम्पनी द्वारा नियुक्त व्यक्तिहरूलाई निरीक्षणको लागि तालिका अनुसार पहुँच प्रदान गर्न सहमत हुनुहुन्छ ।",
+          contentEng:"(You agree to provide access as per the schedule for the inspection to the personals appointed by the company with proper identification of link with us.)"
+        },
+        {
+          title: "निरीक्षण शुल्क भुक्तानी (Inspection Fee Payment)",
+          contentNep:"तपाईं सहमत हुनुहुन्छ कि यो सम्झौतामा हस्ताक्षर गर्दा तपाईंले यस सम्झौताका सामग्रीहरू पढ्नुभएको र बुझ्नुभएको छ र यो कागजात अनुसार निरीक्षण गरिनेछ । तपाईं निरीक्षण सुरु पश्चात सोहि दिन निरीक्षणको लागि आवस्यक न्यूनतम रकम भुक्तानी गर्न सहमत हुनुहुन्छ ।",
+          contentEng:"(You agree that in signing this agreement You have read and understand the contents of this agreement and that the inspection will be carried out in accordance with this document. You agree to pay for the inspection on the same day after completion of inspection.)"
+        },
+        {
+          title: "गोपनीयता कायम (Keeping Privacy)",
+          contentNep:"भवनको प्रतिनिधिको उपस्थितिमा मात्र निरीक्षण गरिनेछ । हामीले देखेका र नदेखेका सबै सम्पत्तिहरूमा हामीले नियुक्त गरेको व्यक्तिद्वारा कुनै पनि बाधा पर्ने छैन ।",
+          contentEng:"(Inspection will be carried out only in the presence of representative from the building. All the seen and unseen properties will not be hampered by the individuals appointed by Samagra Builders.)"
+        },
+        {
+          title: "मिडिया मैत्री वातावरण (Media Friendly Environment)",
+          contentNep:"तपाईं समस्याको थप अध्ययन र नमूनाका लागि तस्विर र भिडियो खिच्न मिडिया मैत्री वातावरण कायम राख्न सहमत हुनुहुन्छ। साथै, हामी तपाईंको गोपनीयता कायम राख्दै सामाजिक प्लेटफर्महरूमा क्याप्चर गरिएका छविहरू प्रयोग गर्न स्वतन्त्र छौं ।",
+          contentEng:"(You agree to maintain the media friendly environment to take pictures and video for the further study and sampling of the problem. Also, we are free to use captured images on social platforms maintaining your privacy.)"
+        },
+        {
+          title: "वारेन्टी र वैधता प्रावधान (Warranty and Validity)",
+          contentNep:"तपाईं सहमत हुनुहुन्छ कि यो सम्झौतामा हस्ताक्षर गर्दा, प्रस्तावित उद्धरण सहितको रिपोर्ट निरीक्षणको मितिबाट तीस (३०) दिनको अवधिको लागि मान्य हुन्छ, र निरीक्षण सम्झौतामा नाम दिइएको ग्राहक/पक्षहरूको विशेष प्रयोगको लागि हुनेछ र रिपोर्ट भित्र साथै, नविकरणका लागि आवश्यक पर्ने टाईलहरू बाहेक सबै श्रम र निर्माण सामग्रीहरू कोटेशनहरूमा समावेश गरिएको भए तापनि निर्दिष्ट गरिएको समग्र विल्डर्सको हो भन्ने बुझ्नुहुन्छ ।",
+          contentEng:"(You agree that in signing this agreement, you understand that the report along with proposed quotation is valid for a period of thirty (30) days from the date of inspection, and is for the exclusive use of the client/parties named on the inspection agreement and within the report. Also, it is necessary to understand that all the labors and construction materials except tiles required for renovation are included in quotations nevertheless specified are belonging of Samagra Builders.)"
+        },
+        {
+          title: "निरीक्षण विधि (Inspection Methodology)",
+          contentNep:"निरीक्षकहरू र प्राविधिकहरूद्वारा गरिएका सबै निरीक्षणहरू केही प्लम्बिङ र विद्युतीय निरीक्षणहरू बाहेक पूर्ण रूपमा गैर-विनाशकारी परीक्षणहरू हुनेछन् ।",
+          contentEng:"(All the inspections are solely carried out by the inspectors and the technicians only. Non-destructive tests (NDTs) other than some of the plumbing and electrical inspections are to be carried out.)"
+        },
+        {
+          title: "सम्झौताको वैधता (Contract Validity)",
+          contentNep:"यदि तपाईंले हस्ताक्षर गर्न र हामीलाई यस सम्झौताको प्रतिलिपि फिर्ता गर्न असफल हुनुभयो र अनुरोध गरिएको निरीक्षण रद्द गर्नुभएन भने, तपाईं सहमत हुनुहुन्छ कि तपाईंले यस सम्झौताको सामग्रीहरू पढ्नुभएको र बुझ्नुभएको छ र हामी यस सम्झौताको आधारमा निरीक्षण शुल्क लिन बाध्य हुनेछौं |",
+          contentEng:"(If You fail to sign and return a copy of this agreement to us and do not cancel the requested inspection, then you agree that you have read and understand the contents of this agreement which says that you need to pay the inspection fees for the same.)"
+        },
       ]
 
 }
