@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import { useContext, createContext, useState } from "react";
+import Services from "./Components/Services";
 
 const AppState = createContext();
 export function useQuickLinks() {
@@ -18,9 +19,10 @@ function App() {
     { name: "CONTACT US", to: "/contact" },
     { name: "BLOG", to: "/blog" },
   ]);
+  const [showRead, setShowRead] = useState(true);
 
   const QuickLinksProvider = ({ children }) => {
-    return <AppState.Provider value={navLinks}>{children}</AppState.Provider>;
+    return <AppState.Provider value={{navLinks,showRead,setShowRead}}>{children}</AppState.Provider>;
   };
 
   return (
@@ -29,6 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
     </QuickLinksProvider>

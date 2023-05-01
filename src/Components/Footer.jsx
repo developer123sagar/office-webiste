@@ -6,9 +6,9 @@ import { FaFacebook, FaHeart, FaInstagram, FaPhoneAlt, FaTiktok, FaYoutube } fro
 import { MdEmail } from 'react-icons/md'
 
 const Footer = () => {
-  const navLinks = useQuickLinks()
+  const {navLinks} = useQuickLinks()
   return (
-    <div className='w-full bg-gray-900 text-white mt-14 footerSmall md:footer'>
+    <div className='w-full bg-gray-900 text-white mt-14 footer'>
       <div className='flex flex-col lg:flex-row gap-1 pt-10 pl-2 pr-2 lg:pt-10 lg:px-8 lg:pb-4 lg:gap-8'>
         <div className='lg:basis-1/4 pr-2 lg:pr-0'>
           <div className="flex mb-1 items-center gap-1">

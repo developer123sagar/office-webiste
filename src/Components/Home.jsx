@@ -8,9 +8,12 @@ import img3 from "../img/AC img/photo.png"
 import img4 from "../img/AC img/rabin.png"
 import { Typewriter } from "react-simple-typewriter";
 import { FaAward } from "react-icons/fa"
+import { RxDoubleArrowUp } from 'react-icons/rx'
 import ServiceCard from "./ServiceCard";
 import { HiOutlineArrowCircleRight } from "react-icons/hi"
 import Testimonials from "./Testimonials";
+import { ChooseusCard } from "./ChooseusCard";
+import data from "../Datas";
 
 const Home = () => {
   const [index, setIndex] = useState(0)
@@ -29,50 +32,13 @@ const Home = () => {
     Aos.init({ duration: 2000 })
   }, [])
 
-  const services = [
-    {
-      title: "Construction Supervision",
-      content: "Construction supervision is the process of overseeing and managing the construction of a building or infrastructure project ....",
-      servImg: "images/services1.jpeg"
-    },
-    {
-      title: "Seepage Treatment",
-      content: "Seepage is the slow movement of water through soil, rock, or other porous materials. It can be a significant problem in civil engineering projects, particularly ....",
-      servImg: "images/services2.jpeg"
-    },
-    {
-      title: "Building Renovation",
-      content: "Renovating a building is an exciting and often necessary process that can completely transform its look and feel. Whether it's updating the ....",
-      servImg: "images/services3.jpeg"
-    },
-  ]
+  const { services, extraServices, testimonials, chooseUs } = data;
 
-  const testimonials = [
-    { 
-      name: "Ram Aryal", 
-      description: "Sr. Div. Engineer (DoWR, GoN)", 
-      thoughts: "I recently had the pleasure of working with Samagra BUilders Pvt. Ltd. on my home renovation project, and I can’t wait recommend them highly enough. The team was professional, courteous, and always on time. They kept us informed throughout the entire process and went above and beyond to ensure that the project was completed on time and within budget. The quality of their work was exceptional, and we couldn’t be happier with the results.",
-      rating: 4.5,
-      imgTestimonial: "images/testimonials1.jpg"
-    },
-    {
-      name: "Jay Raj Pant",
-      description: "Businessman",
-      thoughts: "We hired Samagra Builders Pvt. Ltd. to renovate our building for our business, and we were blown away by their professionalism and expertise. The team was extremely knowledgeable and provided us with excellent guidance throughout the entire process. They were always available to answer our questions and address any concerns we had. The quality of their work was exceptional, and we are thrilled with the finished product.",
-      rating: 4,
-      imgTestimonial: "images/testimonials2.jpg"
-    },
-    {
-      name: "Digambar Bikram Rana",
-      description: "Former Government Officer",
-      thoughts: "I recently used the service of Samagra Builders Pvt. Ltd. to renovate my home, and I was incredibly impressed with their attention to detail and commitment to quality. The team was courteous, respectful, and always willing to go the extra mile to ensure that the project was completed to my satisfaction. They worked efficiently and effectively, and the finished result was beyond my expectations. I would highly recommend this company to anyone looking for a reliable and professional construction team.",
-      rating: 5,
-      imgTestimonial: "images/testimonials3.jpeg",
-    }
-  ]
 
   return (
     <>
+      <a href="#" className="fixed bottom-0 right-0 z-10"><RxDoubleArrowUp color="blue" size={25} /> </a>
+
       {/* starting homepage */}
       <div className="w-full h-[550px] md:h-[610px]">
         <div className="w-full h-full ">
@@ -106,64 +72,20 @@ const Home = () => {
       </div>
 
       {/* why choose us */}
-      <div className="w-full p-2 mt-20 relative h-[40%]" data-aos="fade-up">
-        <div className="w-full px-10">
-          <h1 className="text-xl font-bold text-red-500">Why Choose Us ?</h1>
-          <h1 className="text-xl md:text-3xl font-bold w-full">Six Reasons For People Choosing Us</h1>
-          <div className="grid gap-4 grid-flow-col grid-cols-1 grid-rows-6 md:grid-cols-3 md:grid-rows-2 mt-8">
-
-            <div className=" bg-slate-500 rounded-md p-2 h-[200px] md:h-[250px] grid place-items-center">
-              <div>
-                <h1 className="font-bold text-base lg:text-xl text-brown w-max mx-auto">Quality assurance</h1>
-                <p className=" px-5 text-white text-center text-xs lg:text-base mt-3">Quality assurance is a critical component of any product or service development process. It involves the systematic review, testing, ....</p>
-              </div>
-            </div>
-
-            <div className="bg-slate-500 rounded-md p-2 grid place-items-center">
-              <div>
-                <h1 className="font-bold text-base lg:text-xl text-brown w-max mx-auto">Accredited Firm</h1>
-                <p className="px-5 text-white text-center text-xs lg:text-base mt-3">Becoming an accredited firm is a significant achievement that requires a commitment to quality and meeting established standards. Accreditation can provide ....</p>
-              </div>
-            </div>
-
-            <div className="bg-slate-500 rounded-md p-2 grid place-items-center">
-              <div>
-                <h1 className="font-bold text-base lg:text-xl text-brown w-max mx-auto">Trained Manpower</h1>
-                <p className="px-5 text-white text-center text-xs lg:text-base mt-3">Trained manpower is an important asset to many industries and professions. It can improve productivity, quality of work, and efficiency, and help organizations remain competitive in the ....
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-slate-500 rounded-md p-2 grid place-items-center">
-              <div>
-                <h1 className="font-bold text-base lg:text-xl text-brown w-max mx-auto">Time Availability</h1>
-                <p className="px-5 text-white text-center text-xs mt-3 lg:text-base">Time availability is a crucial factor in determining the success of any endeavor. Managing time effectively requires individuals and organizations to prioritize
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-slate-500 rounded-md p-2 grid place-items-center">
-              <div>
-                <h1 className="font-bold text-base lg:text-xl text-brown w-max mx-auto">Quick Response</h1>
-                <p className="p-2 text-white text-center text-xs lg:text-base">To be effective, quick response must be coordinated and efficient. This requires individuals and organizations to work together as a team, communicating clearly and effectively to ensure that everyone ....
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-slate-500 rounded-md p-2 grid place-items-center">
-              <div>
-                <h1 className="font-bold text-base lg:text-xl text-brown w-max mx-auto">1 Year Warranty</h1>
-                <p className="px-5 text-white text-center text-xs mt-3 lg:text-base">From a business perspective, offering a warranty in service can also help to reduce the risk of costly legal disputes or reputational damage in the event that a service does not perform as expected.
-                </p>
-              </div>
-            </div>
-
-          </div>
+      <div className="w-full p-4 mt-10 lg:mt-20 relative h-[40%]" data-aos="fade-up">
+        <h1 className="text-xl font-bold text-red-500">Why Choose Us ?</h1>
+        <h1 className="text-xl md:text-3xl font-bold w-full">Six Reasons For People Choosing Us</h1>
+        <div className="grid gap-4 grid-cols-1 grid-rows-6 sm:grid-cols-3 sm:grid-rows-2 mt-8">
+          {
+            chooseUs.map((item, id) => (
+              <ChooseusCard key={id} title={item.title} icon={item.icon} content={item.content} />
+            ))
+          }
         </div>
       </div>
 
       {/* About the company */}
-      <div className="w-full p-4 mt-20 relative" data-aos="fade-up">
+      <div className="w-full p-4 mt-10 lg:mt-20 relative" data-aos="fade-up">
         <div className="lg:flex">
           <div className="basis-1/2 mr-10 hidden lg:block">
             <img src={photos[index]} alt="/" className="h-full" />
@@ -199,30 +121,35 @@ const Home = () => {
       </div>
 
       {/* our services */}
-      <div className="w-full p-4 mt-20 relative bg-slate-900" data-aos="zoom-in">
+      <div className="w-full p-4 mt-10 lg:mt-20 relative bg-slate-900" data-aos="zoom-in">
         <div className="flex justify-center w-full items-center flex-col">
           <h1 className="text-lg sm:text-xl text-red-500 font-bold">Our Services</h1>
           <p className="text-xl sm:text-2xl text-white text-center">We Provide Superior Enginerring Services</p>
         </div>
-        <div className="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 md:gap-x-5 mt-5 border-b-orange-200 border-b-[1px]">
-          <ServiceCard title={services[0].title} content={services[0].content} serviceImg={services[0].servImg} />
-          <ServiceCard title={services[1].title} content={services[1].content} serviceImg={services[1].servImg} />
-          <ServiceCard title={services[2].title} content={services[2].content} serviceImg={services[2].servImg} />
+        <div className="grid grid-cols-1 grid-rows-3 sm:grid-cols-3 sm:grid-rows-1 sm:gap-x-5 mt-5">
+          {
+            services.map((item, id) => (
+              <div key={id} className="">
+                <ServiceCard title={item.title} content={item.content} serviceImg={item.servImg} />
+                <p className="mx-auto text-white cursor-pointer hover:bg-green-500 w-fit mb-5 bg-yellow-500 rounded-md px-4 py-2">Read More</p>
+              </div>
+            ))
+          }
         </div>
-        <p className="text-red-500 text-base sm:text-lg mt-10 mb-3">Additional Services</p>
+        <p className="text-red-500 text-base sm:text-lg mt-2 border-t-[1px] border-gray-300 pt-5 mb-3">Additional Services</p>
         <h1 className="text-white text-xl md:text-3xl font-semibold">We Also Offer</h1>
         <div className="text-white text-sm text-justify my-5">
           <p className="lg:w-[80%]">Having served for the past 3 years, we've been providing several engineering services with quality assurance and guarantee. We are also established as a renowned engineering service provider in Nepalese market and construction industry.</p>
-          <div className="mt-4 flex items-center gap-x-2"><HiOutlineArrowCircleRight color="purple" size={25} /><p>Home Insepection</p></div>
-          <div className="mt-4 flex items-center gap-x-2"><HiOutlineArrowCircleRight color="purple" size={25} /><p>Engineering Consultation</p></div>
-          <div className="mt-4 flex items-center gap-x-2"><HiOutlineArrowCircleRight color="purple" size={25} /><p>CAD and GIS Solutions</p></div>
-          <div className="mt-4 flex items-center gap-x-2"><HiOutlineArrowCircleRight color="purple" size={25} /><p>Construction</p></div>
-          <div className="mt-4 flex items-center gap-x-2"><HiOutlineArrowCircleRight color="purple" size={25} /><p>Interior and Exterior Design</p></div>
+          {
+            extraServices.map((item, id) => (
+              <div key={id} className="mt-4 flex items-center gap-x-2"><HiOutlineArrowCircleRight color="purple" size={25} /><p>{item}</p></div>
+            ))
+          }
         </div>
       </div>
 
       {/* testimonials */}
-      <div className="w-full p-4 relative mt-20" data-aos="fade-up">
+      <div className="w-full p-4 relative mt-10 lg:mt-20" data-aos="fade-up">
         <h1 className="text-2xl text-center font-bold text-black mb-5">People Say The Nicest Things</h1>
         <div className="grid grid-rows-3 grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 gap-5">
           <Testimonials name={testimonials[0].name} description={testimonials[0].description} rating={testimonials[0].rating} thoughts={testimonials[0].thoughts} img={testimonials[0].imgTestimonial} />
