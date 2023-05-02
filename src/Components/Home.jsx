@@ -14,6 +14,7 @@ import { HiOutlineArrowCircleRight } from "react-icons/hi"
 import Testimonials from "./Testimonials";
 import { ChooseusCard } from "./ChooseusCard";
 import data from "../Datas";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [index, setIndex] = useState(0)
@@ -64,7 +65,7 @@ const Home = () => {
               give us a request, and we'll give you the best services for your
               upcoming major project.
             </p>
-            <button className="mt-4 bg-yellow-500 py-2 px-4 rounded-md">
+            <button className="mt-4 bg-yellow-500 hover:bg-red-500 py-2 px-4 rounded-2xl hover:rounded-none transition-all duration-700">
               Learn More
             </button>
           </div>
@@ -131,7 +132,7 @@ const Home = () => {
             services.map((item, id) => (
               <div key={id} className="">
                 <ServiceCard title={item.title} content={item.content} serviceImg={item.servImg} />
-                <p className="mx-auto text-white cursor-pointer hover:bg-green-500 w-fit mb-5 bg-yellow-500 rounded-md px-4 py-2">Read More</p>
+                <Link to="/services"><p className="mx-auto text-white cursor-pointer hover:bg-green-500 w-fit mb-5 bg-yellow-500 rounded-md px-4 py-2">Read More</p></Link>
               </div>
             ))
           }

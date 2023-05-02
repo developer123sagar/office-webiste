@@ -10,6 +10,7 @@ const Footer = () => {
   return (
     <div className='w-full bg-gray-900 text-white mt-14 footer'>
       <div className='flex flex-col lg:flex-row gap-1 pt-10 pl-2 pr-2 lg:pt-10 lg:px-8 lg:pb-4 lg:gap-8'>
+        {/* about samagra */}
         <div className='lg:basis-1/4 pr-2 lg:pr-0'>
           <div className="flex mb-1 items-center gap-1">
             <img src={logo} alt="logo" className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-cover object-center" />
@@ -19,6 +20,7 @@ const Footer = () => {
           <p className='md:text-sm pl-2 text-justify text-xs'>आफ्नो घरमा भएको 𝐒𝐞𝐞𝐩𝐚𝐠𝐞, 𝐃𝐚𝐦𝐩𝐧𝐞𝐬𝐬 जस्ता समस्या सधैको लागी समाधान गर्न Samagra Builders को Engineer को टिम बाट घरको चेक, जाच गराउनुहोस |</p>
         </div>
 
+          {/* links */}
         <div className='mt-1 p-3 w-fit'>
           <h1 className='font-bold text-lg'>Quick Links</h1>
           <div className={"text-white"} >
@@ -30,12 +32,13 @@ const Footer = () => {
           </div>
         </div>
 
+          {/* location */}
         <div className='mt-1 p-3 w-full lg:basis-1/4'>
           <h1 className='font-bold text-lg mb-2'>Location</h1>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.9622687618503!2d85.3602719744065!3d27.68756102636574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bb0069ba74f%3A0xe35ee8f50fbad0f2!2sSamagra%20Builders%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1682794961309!5m2!1sen!2snp" className='w-full h-[260px] rounded-md' loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           <p className='mt-2 text-sm'>Pepsicola - 32, Kathmandu Metropolitan City, Kathmandu, Nepal </p>
         </div>
-
+          {/* contact info */}
         <div className="mt-1 p-3 lg:basis-1/4">
           <h1 className='font-bold text-lg mb-2'>Contact Info</h1>
           <div className='flex items-center gap-[2px] sm:gap-x-3'>

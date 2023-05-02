@@ -19,7 +19,7 @@ const Blog = () => {
                                             <PrvPolicyCard key={id} title={item.title} contentNep={item.contentNep} contentEng={item.contentEng} />
                                         ))
                                 }
-                                <button onClick={()=> setShowPP(false)} className='mt-8 bg-yellow-500 hover:bg-red-400 px-4 py-2 text-white rounded-md'>Go Back</button>
+                                <button onClick={()=> setShowPP(false)} className='mt-8 bg-blue-700 hover:bg-red-500 px-4 py-2 text-white rounded-2xl transition-all duration-700 hover:rounded-none'>Go Back</button>
                             </>
 
                         ) : (
